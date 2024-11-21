@@ -1,0 +1,49 @@
+/* ======================================================\\BODY//======================================================== */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/andrew-finch-island-lighting-8.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* ==================================================\\SOMMAIRE//======================================================== */
+
+/* titre du sommaire */
+#titreS{
+    text-align: center;
+    font-family: verdana;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: solid white 2px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#sommaire{
+    display: flex;
+    justify-content: center;    
+}
+
+/* bloc du soommaire  */
+ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* ligne du sommaire*/
+li{
+    font-family: verdana;
+    font-size: large;
+    padding: 10px;
+    margin: 3s0px;
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+li:hover{
+    box-shadow: 3px -4px 4px white;
+    text-decoration: underline;
+}

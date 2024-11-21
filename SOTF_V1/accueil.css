@@ -1,0 +1,136 @@
+/* ======================================================\\BODY//========================================================== */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bgPage.png.png);
+    background-position: center center;
+    background-attachment: fixed;
+ }
+/* ==================================================\\NAV-BARRE-DE-RECHERCHE//============================================ */
+
+nav{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ /* barre de recherche */
+ nav input{
+    border: solid white 2px;
+    border-radius: 30px;
+    height: 4vh;
+    width: 50vw;
+    margin: 20px;
+    text-align: center;
+    font-family: Verdana;
+ }
+
+/* ======================================================\\BOUTON NAVIGATION//============================================ */
+
+ section{
+   display: flex;
+   justify-content: space-around;
+}
+
+/* bloc bouton */
+.btnSection{
+   font-size: x-large;
+   font-family: Verdana;
+   color: white;
+   margin: 20px;
+   padding: 20px;
+   border: solid white 3px;
+   border-radius: 15px; 
+   background-color: rgba(0,0,0,0.4);
+}
+.btnSection:hover{
+   box-shadow: 3px -4px 4px white;
+   text-decoration: underline;
+}
+/* ======================================================\\CAROUSEL//====================================================== */
+#slider{
+   position: relative;
+   width: 80vw;
+   margin: auto;
+   display: flex;
+   align-items: center;
+}
+
+#slide{
+   width: 80vw;
+   border: solid white 2px;
+   border-radius: 15px;
+   background-color:rgba(0, 0, 0, 0.5);
+   margin-top: 9vh;
+   margin-bottom: 9vh;
+   
+}
+
+#precedent,#suivant{
+   position: absolute;
+   font-size: 40px;
+   color:rgba(255, 255, 255,0.6);
+   cursor: pointer;
+   opacity: 0.5;
+}
+
+#precedent:hover,#suivant:hover{
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+
+#precedent{
+   left: -36px;
+}
+
+#suivant{
+   right: -40px;
+}
+
+
+/* ======================================================\\RESPONSIVE//==================================================== */
+
+@media(max-width:800px){
+
+
+/*==========\\BARRE-DE-NAVIGATION//=========== */
+   nav{
+      margin: 10px;
+   }
+
+   nav input{
+      width: 80vw;
+      height: 7vh;
+   }
+
+/*==========\\BOUTON-NAVIGATION//=========== */
+   section{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 10px;
+   }
+
+   .btnSection{
+      font-size: medium;
+      margin: 10px;
+      padding: 15px;
+   }
+
+/* ==========\\CAROUSEL//===========  */
+   #slider{
+      width: 80vw;
+   }
+   #slide{
+      width: 80vw;
+   }
+
+
+/*==========\\FOOTER//=========== */
+   footer{
+      height: 10vh;
+   }
+
+   footer div{
+      margin: 10px;
+   }
+}

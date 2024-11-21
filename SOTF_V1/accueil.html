@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Of Thieaves Fishing</title>
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+
+<!-- ==============================================\\BANIERE-HAUT-DE-PAGE//================================================ -->
+    
+    <header>
+        <!-- LOGO -->
+        <a href="./accueil.html"><img src="./images/logo.png" alt="..." id="logo"></a>
+
+        <!-- BUTIN ET PROFIL -->
+        <div id="bocBP">
+            <img src="./images/butin.png" alt="..." id="butin">
+            <img src="./images/profil.png" alt="..." id="profil">
+        </div>
+    </header>
+
+<!-- ==============================================\\BARRE-DE-RECHERCHE//================================================ -->
+   
+    <nav>
+        <input type="search" placeholder="Ou êtes vous ?">
+    </nav>
+
+<!-- ==============================================\\BOUTON-NAVIGATION//================================================ -->
+    <section>
+        <a href="./poissons.html"><div class="btnSection" id="btnP">Poissons</div></a>
+        <a href=""><div class="btnSection" id="btnR">Régions/Îles</div></a>
+        <a href="./chasse.html"><div class="btnSection" id="btnIR">Chasse</div></a>
+     </section>
+
+<!-- =================================================\\CAROUSEL//======================================================= -->
+
+    <main id="slider">
+        
+        <img src="./image carrousel/img1.png" alt="img1" id="slide">
+        <div id="precedent" onclick="changeSlide(-1)"> &#11164; </div>
+        <div id="suivant" onclick="changeSlide(1)"> &#11166;</div>
+           
+    </main>
+
+<!-- ==============================================\\BANIERE-BAS-DE-PAGE//================================================ -->
+    
+    <footer>
+        <div>
+            <!-- BOUTON DE DE PAGE -->
+            <a href="./accueil.html"><nav class="btnFooter">accueil</nav></a>
+            <a href="./poissons.html"><nav class="btnFooter">Poissons</nav></a>
+            <nav class="btnFooter">Régions</nav>
+            <nav class="btnFooter">Îles/Régions</nav>
+        </div>
+    </footer>
+
+
+    <script src="carrousel.js"></script>
+</body>
+</html>

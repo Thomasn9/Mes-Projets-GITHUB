@@ -1,0 +1,108 @@
+/* ========================================================\\HEADER//===================================================== */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BANNIERE */
+
+header{
+    background-image: url(./images/baniere.png);
+    background-position: center center;
+    border:solid white 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#logo{
+    margin: 10px;
+}
+
+/* BOUTON BUTIN */
+#butin{
+    border: solid black 2px; 
+    border-radius: 5%; 
+    height: 19vh;
+    margin: 27px; 
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+ }
+ #butin:hover{
+    box-shadow: 2px -2px 4px;
+ }
+
+ /* BOUTON PROFIL */
+ #profil{
+    border: solid black 2px;
+    border-radius: 5%; 
+    height: 19vh; 
+    margin: 27px; 
+    padding: 3px; 
+    background-color: rgba(255, 255, 255, 0.4);
+ }
+ #profil:hover{
+    box-shadow: 2px -2px 4px;
+ }
+
+/* ========================================================\\FOOTER//===================================================== */
+a{
+    text-decoration: none;
+}
+
+footer{
+    height:10vh ;
+    border: solid white 4px;
+    background-image: url(./images/bgFooter.png);
+    background-position: center center;
+
+}
+
+footer div{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;    
+}
+nav{
+    font-family: verdana;
+    font-size: large;
+}
+
+.btnFooter{
+    margin: 7px;
+    padding: 4px;
+    color:black;
+    border:solid black 2px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.4);
+ }
+ .btnFooter:hover{
+    box-shadow: 3px -2px 4px black;
+ } 
+
+
+/*====================================================\\RESPONSIVE-HAUT-DE-PAGE//========================================== */
+
+@media(max-width:800px){
+    #logo{
+        margin: 20px;
+        width: 25vw;
+        height: 11vh;
+    }
+    #butin{
+        width: 12vw;
+        height: 9vh;
+    }
+    #profil{
+        width: 12vw;
+        height: 9vh;
+    }
+
+
+/*===================================================\\RESPONSIVE-BAS-DE-PAGE//========================================== */
+    nav{
+        font-size: small;
+    }
+
+}

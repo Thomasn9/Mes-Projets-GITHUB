@@ -1,0 +1,149 @@
+/* ======================================================\\BODY//======================================================== */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bgPage.png.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* ==================================================\\SOMMAIRE//======================================================== */
+
+/* titre du sommaire */
+#titreS{
+    text-align: center;
+    font-family: verdana;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: solid white 2px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#sommaire{
+    display: flex;
+    justify-content: left;
+}
+
+/* bloc du soommaire  */
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* ligne du sommaire*/
+li{
+    font-family: verdana;
+    font-size: large;
+    padding: 10px;
+    margin: 3px;
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+li:hover{
+    box-shadow: 3px -4px 4px white;
+    text-decoration: underline;
+}
+
+/* ====================================================\\POISSONS//======================================================== */
+
+/* Race de poissons + appâts + zone de pêche */
+section{
+    font-family: verdana;
+    color: white;
+    margin: 3vh;
+    display: flex;
+    justify-content: space-around;
+    border: solid white 2px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* le bloc complet de tous les variant de poissons par race  */
+article{
+    font-family: verdana;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* nom des variants + Rareté */
+h2{
+    color: white;
+    font-weight: normal;
+    font-size:large;
+    font-family: verdana;
+    border: solid white 2px ;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 15px;
+    background-color:rgba(0,0,0,0.6);
+}
+
+/* Div du tableau */
+#boxPrix{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* le bloc du tableau */
+table{
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* les titres du tableau */
+th{
+    font-family: verdana;
+    font-size: large;
+    padding: 5px;
+}
+
+/* Les infos du tableau */
+td{
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* ==================================================\\RESPONSIVE//======================================================== */
+
+@media(max-width:800px){
+
+/*==========\\SOMMAIRE//=========== */
+    li{
+        font-size: smaller;
+        padding: 7px;
+        margin: 7px;
+    }
+
+/*==========\\TITRE-POISSONS + APPÂTS + VARIANT + RARETÉ//=========== */
+    section h1{
+       font-size: smaller;
+       padding: 10px; 
+    }
+
+    section p{
+        font-size: smaller;
+    }
+
+/*==========\\TITRE-POISSONS + APPÂTS + VARIANT + RARETÉ//=========== */
+    article div{
+        margin: 20px;
+    }
+
+   
+
+}
